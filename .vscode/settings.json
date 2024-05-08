@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/abdul/ws_drone_racing/install/tello_race/lib/python3.8/site-packages",
+        "/home/abdul/ws_drone_racing/install/tello_msgs/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/abdul/ws_drone_racing/install/tello_race/lib/python3.8/site-packages",
+        "/home/abdul/ws_drone_racing/install/tello_msgs/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ]
+}

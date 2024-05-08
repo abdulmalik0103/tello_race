@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/abdul/ws_drone_racing/install/tello_msgs/include/**",
+        "/home/abdul/ws_drone_racing/install/ros2_shared/include/**",
+        "/opt/ros/galactic/include/**",
+        "/home/abdul/ws_drone_racing/src/drone_racing_ros2/ros2_shared/include/**",
+        "/home/abdul/ws_drone_racing/src/drone_racing_ros2/tello_ros/tello_driver/include/**",
+        "/home/abdul/ws_drone_racing/src/drone_racing_ros2/tello_ros/tello_gazebo/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
