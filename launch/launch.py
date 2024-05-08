@@ -8,7 +8,7 @@ from launch.actions import ExecuteProcess
 
 def generate_launch_description():
     ns = 'drone1'
-    world_path = os.path.join(get_package_share_directory('tello_race'), 'worlds', 'World1.world')
+    world_path = os.path.join(get_package_share_directory('tello_race'), 'worlds', 'World2.world')
     urdf_path = os.path.join(get_package_share_directory('tello_description'), 'urdf', 'tello_1.urdf')
 
     return LaunchDescription([
