@@ -26,7 +26,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'receiver = tello_race.receiver:main',
+            'detector = tello_race.detector:main',
             'controller= tello_race.controller:main',
         ],
     },

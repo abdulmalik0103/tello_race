@@ -8,7 +8,7 @@ from launch.actions import ExecuteProcess
 
 def generate_launch_description():
     ns = 'drone1'
-    world_path = os.path.join(get_package_share_directory('tello_race'), 'worlds', 'World2.world')
+    world_path = os.path.join(get_package_share_directory('tello_race'), 'worlds', 'World3.world')
     urdf_path = os.path.join(get_package_share_directory('tello_description'), 'urdf', 'tello_1.urdf')
 
     return LaunchDescription([
@@ -23,14 +23,15 @@ def generate_launch_description():
 
         # Spawn tello.urdf
         Node(package='tello_gazebo', executable='inject_entity.py', output='screen',
-             arguments=[urdf_path, '0', '0', '1', '1.57079632679']),
+             arguments=[urdf_path, '0', '-2', '1', '1.57079632679']),
 
         # Publish static transforms
         Node(package='robot_state_publisher', executable='robot_state_publisher', output='screen',
              arguments=[urdf_path]),
 
-        #Node(package='tello_race', executable='detector', output='screen'),
+        Node(package='tello_race', executable='detector', output='screen'),
         Node(package='tello_race', executable='controller', output='screen'),
+        
 
         # Joystick driver, generates /namespace/joy messages
         Node(package='joy', executable='joy_node', output='screen',
