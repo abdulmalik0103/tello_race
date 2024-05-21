@@ -31,3 +31,8 @@ git clone https://github.com/abdulmalik0103/tello_race.git
 cd tello_race 
 ./run_everything.sh
 ```
+
+## Switching Between Different Worlds
+```
+Different Worlds can be switched in launch.py file by changing from World1.world to World2.world or World3.world
+```
